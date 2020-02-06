@@ -100,10 +100,6 @@ public class SimpleServlet extends HttpServlet {
 		Token token = new Token(response);
 		AthleteService asss = token.getService(AthleteService.class);
 		ActivityService sa = ActivityServiceImpl.instance(token);
-		StravaAthlete straAth = asss.getAuthenticatedAthlete();
-		System.out.println("Atyhlete ID : "+straAth.getId());
-		StravaAthlete toAth = token.getAthlete();
-		System.out.println("token Athlete :: "+toAth.getId()+", "+token.getToken()+", ");
 		//Token token = service.tokenExchange(clientId, clientSecret, code);
 		Paging page = new Paging(0,20);
 		WebhookService ts = token.getService(WebhookService.class);

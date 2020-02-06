@@ -10,8 +10,18 @@
 		<description></description>
 		<servlet-class>com.strava.omrtb.servlet.SimpleServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>SimpleServlet2</servlet-name>
+		<display-name>SimpleServlet2</display-name>
+		<description></description>
+		<servlet-class>com.strava.omrtb.servlet.SimpleServlet2</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>SimpleServlet</servlet-name>
 		<url-pattern>/SimpleServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SimpleServlet2</servlet-name>
+		<url-pattern>/SimpleServlet2</url-pattern>
 	</servlet-mapping>
 </web-app>
